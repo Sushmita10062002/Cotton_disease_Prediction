@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 2px;
+	
+}
+
+.section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url('coton2.jpg') no-repeat center center/cover;
+	z-index: -500;
+	opacity: 0.8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-intro{
+    position: absolute;
+ 	width: 70%;
+ 	background-color: rgba(0,0,0,0.7);
+ 	color: white;
+ }
+ .main-intro h1{
+ 	text-align: center;
+ 	margin: 10px;
+ 	color: yellow;
+ 	font-weight: 900;
+ 	font-size: 2rem;
+ }
+ .main-intro p{
+    padding: 20px;
+ }
+
+
+
+
+/*Image Section*/
+.img-preview {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+	width: 100%;
+	text-align: center;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.predict-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 50px;
+
+}
+#btn-predict{
+	width: 50%;
+	text-align: center;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+}
