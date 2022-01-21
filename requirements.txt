@@ -1,4 +1,4 @@
-_anaconda_depends=2021.11=py38_0
+
 absl-py=1.0.0=pypi_0
 alabaster=0.7.12=pyhd3eb1b0_0
 anaconda=custom=py38_1
